@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Women Community Forum</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #8e44ad;
+}
+
+.chat-container {
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chat-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    height: 500px;
+    overflow-y:scroll;
+    margin-bottom: 30px;
+}
+
+.chat-message { 
+    display:flexbox;
+    margin: 5px 0;
+    padding: 8px 12px;  
+    border-radius: 5px;
+    word-wrap: break-word;
+    max-width: 50%;
+}
+
+.current-user {
+    background-color: #a764c4;
+    color: #fff;
+    margin-left: auto;
+    text-align: right;
+}
+
+    /* Other users' messages: aligned to the left */
+.other-user {
+    background-color: #f1f1f1;
+    color: #333;
+    margin-right: auto;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+
+}
+
+button:hover {
+    background-color: #732d91;
+}
+    </style>
+</head>
+<body>
+    <h1>Women Community Forum</h1>
+    <div class="chat-container">
+        <div class="chat-box">
+            {% for chat in chat_history %}
+                <div class="chat-message {% if chat.name == current_user %}current-user{% else %}other-user{% endif %}">
+                    <strong>{{ chat.name }}:</strong> {{ chat.message }}
+                    <span class="timestamp">{{ chat.time }}</span>
+                </div>
+            {% endfor %}
+        </div>
+        <form action="{{ url_for('send_message') }}" method="post">
+            <textarea name="message" placeholder="Share your experience..."></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dada Connect</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-purple-600 text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-xl font-bold">Dada Connect</div>
+                <div class="space-x-6">
+                    <a href="/" class="hover:text-purple-200">Home</a>
+                    <a href="/forum" class="hover:text-purple-200">Chatbot</a>
+                    <a href="/community" class="hover:text-purple-200">Community</a>
+                    <a href="#" class="hover:text-purple-200">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="bg-purple-700 text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to Our Community</h1>
+            <p class="text-xl mb-8">A safe space for women to connect, share, and grow together</p>
+            <button class="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold hover:bg-purple-100">
+                Join Now
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Community Forum Section -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-4 text-purple-700">Community Forum</h2>
+                <div class="border rounded-lg p-4 h-96 overflow-y-auto mb-4">
+                    <!-- Sample Chat Messages -->
+                    <div class="mb-4">
+                        <div class="font-semibold">Sarah:</div>
+                        <div class="bg-gray-100 rounded-lg p-3 mt-1">
+                            Has anyone attended the virtual networking event last week?
+                            <span class="text-xs text-gray-500 block mt-1">2:30 PM</span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="font-semibold">Emma:</div>
+                        <div class="bg-purple-100 rounded-lg p-3 mt-1">
+                            Yes! It was amazing. Made some great connections!
+                            <span class="text-xs text-gray-500 block mt-1">2:35 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <input type="text" placeholder="Type your message..." class="flex-1 border rounded-lg px-4 py-2">
+                    <button class="bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">Send</button>
+                </div>
+            </div>
+
+            <!-- AI Assistant Section -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold mb-4 text-purple-700">AI Assistant</h2>
+                <div class="border rounded-lg p-4 h-96 overflow-y-auto mb-4">
+                    <!-- Sample AI Chat -->
+                    <div class="mb-4">
+                        <div class="font-semibold">AI Assistant:</div>
+                        <div class="bg-blue-100 rounded-lg p-3 mt-1">
+                            Hello! How can I help you today?
+                            <span class="text-xs text-gray-500 block mt-1">2:25 PM</span>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="font-semibold">You:</div>
+                        <div class="bg-gray-100 rounded-lg p-3 mt-1">
+                            I'm looking for mentorship resources
+                            <span class="text-xs text-gray-500 block mt-1">2:26 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <input type="text" placeholder="Ask the AI assistant..." class="flex-1 border rounded-lg px-4 py-2">
+                    <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Ask</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-purple-50 py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-purple-700">Our Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Community Forum</h3>
+                    <p class="text-gray-600">Connect with like-minded women and share experiences</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI Assistant</h3>
+                    <p class="text-gray-600">Get instant help and guidance 24/7</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Resources</h3>
+                    <p class="text-gray-600">Access curated content and learning materials</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-purple-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="font-semibold mb-4">About Us</h4>
+                    <p class="text-purple-200">Empowering women through community and technology</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-purple-200 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-purple-200 hover:text-white">Forum</a></li>
+                        <li><a href="#" class="text-purple-200 hover:text-white">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-purple-200 hover:text-white">Twitter</a></li>
+                        <li><a href="#" class="text-purple-200 hover:text-white">LinkedIn</a></li>
+                        <li><a href="#" class="text-purple-200 hover:text-white">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <div class="flex gap-2">
+                        <input type="email" placeholder="Enter your email" class="bg-purple-900 text-white px-4 py-2 rounded-lg flex-1">
+                        <button class="bg-white text-purple-800 px-4 py-2 rounded-lg hover:bg-purple-100">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-purple-700 mt-8 pt-8 text-center text-purple-200">
+                © 2024 Women's Community Hub. All rights reserved.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
